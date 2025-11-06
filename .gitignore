@@ -1,0 +1,10 @@
+firmware/.generated_files/
+firmware/build/
+firmware/debug/
+firmware/dist/
+firmware/nbproject/Makefile-default.mk
+firmware/nbproject/Makefile-genesis.properties
+firmware/nbproject/Makefile-impl.mk
+firmware/nbproject/Makefile-local-default.mk
+firmware/nbproject/Makefile-variables.mk
+firmware/nbproject/private/
