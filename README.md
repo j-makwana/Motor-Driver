@@ -213,7 +213,7 @@ None Pressed    →      STOP (coast)
 
 ---
 
-**Author**: Jenil Makwana  
+ 
 **Email**: jenil@jmakwana.net 
 **Repository**: https://github.com/j-makwana/Motor-Driver.git
 
