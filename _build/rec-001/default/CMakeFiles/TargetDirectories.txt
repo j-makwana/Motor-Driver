@@ -1,0 +1,4 @@
+/Users/jenil/Credo/rec-001/rec-001.X/_build/rec-001/default/CMakeFiles/rec_001_default_default_XC8_compile.dir
+/Users/jenil/Credo/rec-001/rec-001.X/_build/rec-001/default/CMakeFiles/rec_001_default_image_tNjcvb4u.dir
+/Users/jenil/Credo/rec-001/rec-001.X/_build/rec-001/default/CMakeFiles/edit_cache.dir
+/Users/jenil/Credo/rec-001/rec-001.X/_build/rec-001/default/CMakeFiles/rebuild_cache.dir

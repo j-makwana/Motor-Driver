@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/jenil/Credo/rec-001/rec-001.X/_build/rec-001/default",
+  "command": "/Applications/microchip/xc8/v3.10/bin/xc8-cc -DDEBUG -DF_CPU=20000000 -DXPRJ_default=default -D__ATtiny3217__ -D__DEBUG=1 -I/Users/jenil/Credo/rec-001/rec-001.X/cmake/rec-001/default/../../../firmware -c -mcpu=ATtiny3217 -gdwarf-2 -x c -mdfp=/Users/jenil/.mchp_packs/Microchip/ATtiny_DFP/3.2.268/xc8 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -L/Users/jenil/Credo/rec-001/rec-001.X/cmake/rec-001/default/../../../firmware -gdwarf-3 -mno-const-data-in-progmem -o CMakeFiles/rec_001_default_default_XC8_compile.dir/Users/jenil/Credo/rec-001/rec-001.X/firmware/main.c.o -c /Users/jenil/Credo/rec-001/rec-001.X/firmware/main.c",
+  "file": "/Users/jenil/Credo/rec-001/rec-001.X/firmware/main.c",
+  "output": "/Users/jenil/Credo/rec-001/rec-001.X/_build/rec-001/default/CMakeFiles/rec_001_default_default_XC8_compile.dir/Users/jenil/Credo/rec-001/rec-001.X/firmware/main.c.o"
+},
+{
+  "directory": "/Users/jenil/Credo/rec-001/rec-001.X/_build/rec-001/default",
+  "command": "/Applications/microchip/xc8/v3.10/bin/xc8-cc -DDEBUG -DF_CPU=20000000 -DXPRJ_default=default -D__ATtiny3217__ -D__DEBUG=1 -I/Users/jenil/Credo/rec-001/rec-001.X/cmake/rec-001/default/../../../firmware -c -mcpu=ATtiny3217 -gdwarf-2 -x c -mdfp=/Users/jenil/.mchp_packs/Microchip/ATtiny_DFP/3.2.268/xc8 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -L/Users/jenil/Credo/rec-001/rec-001.X/cmake/rec-001/default/../../../firmware -gdwarf-3 -mno-const-data-in-progmem -o CMakeFiles/rec_001_default_default_XC8_compile.dir/Users/jenil/Credo/rec-001/rec-001.X/firmware/timer.c.o -c /Users/jenil/Credo/rec-001/rec-001.X/firmware/timer.c",
+  "file": "/Users/jenil/Credo/rec-001/rec-001.X/firmware/timer.c",
+  "output": "/Users/jenil/Credo/rec-001/rec-001.X/_build/rec-001/default/CMakeFiles/rec_001_default_default_XC8_compile.dir/Users/jenil/Credo/rec-001/rec-001.X/firmware/timer.c.o"
+},
+{
+  "directory": "/Users/jenil/Credo/rec-001/rec-001.X/_build/rec-001/default",
+  "command": "/Applications/microchip/xc8/v3.10/bin/xc8-cc -DDEBUG -DF_CPU=20000000 -DXPRJ_default=default -D__ATtiny3217__ -D__DEBUG=1 -I/Users/jenil/Credo/rec-001/rec-001.X/cmake/rec-001/default/../../../firmware -c -mcpu=ATtiny3217 -gdwarf-2 -x c -mdfp=/Users/jenil/.mchp_packs/Microchip/ATtiny_DFP/3.2.268/xc8 -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -L/Users/jenil/Credo/rec-001/rec-001.X/cmake/rec-001/default/../../../firmware -gdwarf-3 -mno-const-data-in-progmem -o CMakeFiles/rec_001_default_default_XC8_compile.dir/Users/jenil/Credo/rec-001/rec-001.X/firmware/uart.c.o -c /Users/jenil/Credo/rec-001/rec-001.X/firmware/uart.c",
+  "file": "/Users/jenil/Credo/rec-001/rec-001.X/firmware/uart.c",
+  "output": "/Users/jenil/Credo/rec-001/rec-001.X/_build/rec-001/default/CMakeFiles/rec_001_default_default_XC8_compile.dir/Users/jenil/Credo/rec-001/rec-001.X/firmware/uart.c.o"
+}
+]

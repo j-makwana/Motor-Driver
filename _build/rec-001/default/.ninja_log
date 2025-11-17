@@ -1,0 +1,10 @@
+# ninja log v7
+2	948	1763187008326912121	CMakeFiles/rec_001_default_default_XC8_compile.dir/Users/jenil/Credo/rec-001/rec-001.X/firmware/timer.c.o	547935d0345a3ee5
+2	966	1763187008327083664	CMakeFiles/rec_001_default_default_XC8_compile.dir/Users/jenil/Credo/rec-001/rec-001.X/firmware/uart.c.o	dacb2d47e4953d60
+1	985	1763187008326589703	CMakeFiles/rec_001_default_default_XC8_compile.dir/Users/jenil/Credo/rec-001/rec-001.X/firmware/main.c.o	e097ce3d89c49f88
+985	1474	1763187009310686464	/Users/jenil/Credo/rec-001/rec-001.X/out/rec-001/default.elf	9b7283dd44953f15
+7	426	1763339252812499335	CMakeFiles/rec_001_default_default_XC8_compile.dir/Users/jenil/Credo/rec-001/rec-001.X/firmware/main.c.o	e097ce3d89c49f88
+8	427	1763339252813160798	CMakeFiles/rec_001_default_default_XC8_compile.dir/Users/jenil/Credo/rec-001/rec-001.X/firmware/timer.c.o	547935d0345a3ee5
+427	514	1763339253232579884	/Users/jenil/Credo/rec-001/rec-001.X/out/rec-001/default.elf	9b7283dd44953f15
+1	327	1763341165340525554	CMakeFiles/rec_001_default_default_XC8_compile.dir/Users/jenil/Credo/rec-001/rec-001.X/firmware/main.c.o	e097ce3d89c49f88
+327	364	1763341165666507103	/Users/jenil/Credo/rec-001/rec-001.X/out/rec-001/default.elf	9b7283dd44953f15

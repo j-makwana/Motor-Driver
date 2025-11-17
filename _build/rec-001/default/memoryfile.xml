@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project>                                  
+  <executable name="/Users/jenil/Credo/rec-001/rec-001.X/out/rec-001/default.elf">                 
+    <memory name="program">              
+      <units>bytes</units>                 
+      <length>32768</length>                 
+      <used>6043</used>                     
+      <free>26725</free>                     
+    </memory>                              
+    <memory name="data">                 
+      <units>bytes</units>                 
+      <length>2048</length>                 
+      <used>128</used>                     
+      <free>1920</free>                     
+    </memory>                              
+  </executable>                            
+</project>                                 
