@@ -206,20 +206,15 @@ None Pressed    →      STOP (coast)
 - Motor control and DRV8701 interfacing (single H-bridge, current regulation)
 - PWM generation and frequency analysis
 - Signal integrity and noise immunity
-- Professional PCB layout considerations
+- Power supply and grounding
+- Safety features (thermal protection, overcurrent protection)
 
-## 📈 Future Enhancements
 
-- **Speed Control**: Add potentiometer for variable speed
-- **Current Sensing**: Motor current monitoring and protection  
-- **Encoder Feedback**: Closed-loop position/speed control
-- **Communication**: SPI/I2C interface for system integration
-- **Safety Features**: Thermal protection and fault diagnostics
 
 ---
 
 **Author**: Jenil Makwana  
-**Contact**: [Your Contact Info]  
+**Email**: jenil@jmakwana.net 
 **Repository**: https://github.com/j-makwana/Motor-Driver.git
 
 *This project demonstrates production-ready embedded firmware development with attention to reliability, maintainability, and professional coding standards.*
