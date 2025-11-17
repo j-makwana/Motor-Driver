@@ -4,7 +4,7 @@ A sophisticated motor control system demonstrating advanced embedded programming
 
 ## 🚀 Project Overview
 
-This firmware controls a bidirectional DC motor using a dual H-bridge motor driver (like DRV8833/L298N) with debounced button inputs. The system demonstrates real-world embedded programming practices including interrupt-driven timing, power management, and hardware abstraction.
+This firmware controls a bidirectional DC motor using the DRV8701 single H-bridge motor driver with debounced button inputs. The system demonstrates real-world embedded programming practices including interrupt-driven timing, power management, and hardware abstraction.
 
 ## 🔧 Hardware Configuration
 
@@ -25,9 +25,26 @@ PB3  → UART RX (9600 baud debug input)
 ```
 
 ### External Components
-- **Motor Driver**: DRV8833 or similar dual H-bridge
+- **Motor Driver**: DRV8701 (single H-bridge, current regulation, nSLEEP, IN1/IN2 interface)
 - **Buttons**: Momentary pushbuttons with external pullups
 - **Motor**: Small DC motor (up to driver rating)
+### DRV8701 Integration
+
+The DRV8701 is a single H-bridge motor driver with integrated current regulation, protection features, and logic-level control. It is controlled via two logic inputs (IN1, IN2) and an nSLEEP pin for power management. The ATtiny3217 interfaces with the DRV8701 as follows:
+
+| ATtiny3217 Pin | DRV8701 Pin | Function                |
+|---------------|-------------|-------------------------|
+| PC4           | IN1         | PWM/Direction Control   |
+| PC5           | IN2         | PWM/Direction Control   |
+| PC0           | nSLEEP      | Enable/Low Power Control|
+
+**Typical Operation:**
+- **Forward:** IN1 (PC4) = PWM, IN2 (PC5) = LOW
+- **Reverse:** IN1 (PC4) = LOW, IN2 (PC5) = PWM
+- **Stop/Coast:** Both IN1 and IN2 LOW
+- **nSLEEP:** Asserted HIGH for normal operation, LOW for low-power shutdown
+
+The DRV8701 provides current regulation, fault reporting, and robust protection for the motor and driver circuitry. This project configures the ATtiny3217 to generate the required PWM and logic signals for safe and efficient motor control.
 
 ## 🏗️ System Architecture
 
@@ -70,21 +87,21 @@ Stored State:  ________________________  (unchanged until confirmed)
 Timer Action:  STOP  S R S ↓ ↓ ↓ ↓ EXP   (S=start, R=reset, EXP=expire)
 ```
 
-#### 3. PWM Motor Control
+#### 3. PWM Motor Control (DRV8701)
 **Hardware PWM Generation using TCA0 Split Mode**
 - 50kHz PWM frequency (above audible range)
 - 50% duty cycle for optimal motor performance  
-- Split-mode allows independent control of two channels
+- Split-mode allows independent control of IN1 and IN2 (DRV8701)
 
 ```c
 #define PWM_FREQ      50000UL                    // 50kHz frequency
 #define PWM_HPER     ((F_CPU / PWM_FREQ) - 1)   // Period calculation
 
-// Forward: PC4=PWM, PC5=LOW
-TCA0.SPLIT.HCMP1 = PWM_HPER / 2;  // 50% duty cycle on PC4
+// Forward: IN1 (PC4)=PWM, IN2 (PC5)=LOW
+TCA0.SPLIT.HCMP1 = PWM_HPER / 2;  // 50% duty cycle on PC4 (IN1)
 
-// Reverse: PC5=PWM, PC4=LOW  
-TCA0.SPLIT.HCMP2 = PWM_HPER / 2;  // 50% duty cycle on PC5
+// Reverse: IN2 (PC5)=PWM, IN1 (PC4)=LOW  
+TCA0.SPLIT.HCMP2 = PWM_HPER / 2;  // 50% duty cycle on PC5 (IN2)
 ```
 
 #### 4. UART Communication
@@ -186,7 +203,7 @@ None Pressed    →      STOP (coast)
 - Thread safety and atomic operations
 
 ### Hardware Integration
-- Motor control and H-bridge interfacing
+- Motor control and DRV8701 interfacing (single H-bridge, current regulation)
 - PWM generation and frequency analysis
 - Signal integrity and noise immunity
 - Professional PCB layout considerations
